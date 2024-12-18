@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<myns:lessons xmlns:myns = "http://www.itmo.ru/xml/lessons ">
+	<myns:course id = "a">
+		<myns:period>26 сентября – 7 октября 2022г.</myns:period>
+		<myns:name>Технологии программирования</myns:name>
+		<myns:teacher>доцент Осипов Н.А.</myns:teacher>
+		<myns:hours>40</myns:hours>
+		<myns:mark>зачет</myns:mark>
+	</myns:course>
+
+	<myns:course id = "b">
+		<myns:period>10 – 20 октября</myns:period>
+		<myns:name>Введение в базы данных</myns:name>
+		<myns:teacher>ст. преп. Ямщиков Д.В.</myns:teacher>
+		<myns:hours>35</myns:hours>
+		<myns:mark>зачет</myns:mark>
+	</myns:course>
+	
+	<myns:course id = "c">
+		<myns:period>24 октября – 8 ноября</myns:period>
+		<myns:name>Программирование на C#</myns:name>
+		<myns:teacher>ст. преп. Смольянинов А.В.</myns:teacher>
+		<myns:hours>50</myns:hours>
+		<myns:mark>зачет</myns:mark>
+	</myns:course>
+	
+	<myns:course id = "d">
+		<myns:period>14 ноября – 6 декабря</myns:period>
+		<myns:name>Transact-SQL и Разработка Microsoft SQL Server</myns:name>
+		<myns:teacher>ст. преп. Ямщиков Д.В.</myns:teacher>
+		<myns:hours>65</myns:hours>
+		<myns:mark>экзамен</myns:mark>
+	</myns:course>
+	
+	<myns:course id = "e">
+		<myns:period>12 – 28 декабря</myns:period>
+		<myns:name>Разработка Windows-приложений на C#</myns:name>
+		<myns:teacher>доцент Осипов Н.А.</myns:teacher>
+		<myns:hours>50</myns:hours>
+		<myns:mark>экзамен</myns:mark>
+	</myns:course>
+	
+	<myns:course id = "f">
+		<myns:period>9 – 13 января</myns:period>
+		<myns:name>Основы технологий разметки (HTML, XML)</myns:name>
+		<myns:teacher>ст. преп. Смольянинов А.В.</myns:teacher>
+		<myns:hours>20</myns:hours>
+		<myns:mark>зачет</myns:mark>
+	</myns:course>
+	
+	<myns:course id = "g">
+		<myns:period>16 – 31 января</myns:period>
+		<myns:name>Технология ADO.NET</myns:name>
+		<myns:teacher>ст. преп. Смольянинов А.В.</myns:teacher>
+		<myns:hours>40</myns:hours>
+		<myns:mark>зачет</myns:mark>
+	</myns:course>
+</myns:lessons>

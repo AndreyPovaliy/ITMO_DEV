@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<lessons>
+	<course id = "a">
+		<period>26 сентября – 7 октября 2022г.</period>
+		<name>Технологии программирования</name>
+		<teacher>доцент Осипов Н.А.</teacher>
+		<hours>40</hours>
+		<mark>зачет</mark>
+	</course>
+
+	<course id = "b">
+		<period>10 – 20 октября</period>
+		<name>Введение в базы данных</name>
+		<teacher>ст. преп. Ямщиков Д.В.</teacher>
+		<hours>35</hours>
+		<mark>зачет</mark>
+	</course>
+	
+	<course id = "c">
+		<period>24 октября – 8 ноября</period>
+		<name>Программирование на C#</name>
+		<teacher>ст. преп. Смольянинов А.В.</teacher>
+		<hours>50</hours>
+		<mark>зачет</mark>
+	</course>
+	
+	<course id = "d">
+		<period>14 ноября – 6 декабря</period>
+		<name>Transact-SQL и Разработка Microsoft SQL Server</name>
+		<teacher>ст. преп. Ямщиков Д.В.</teacher>
+		<hours>65</hours>
+		<mark>экзамен</mark>
+	</course>
+	
+	<course id = "e">
+		<period>12 – 28 декабря</period>
+		<name>Разработка Windows-приложений на C#</name>
+		<teacher>доцент Осипов Н.А.</teacher>
+		<hours>50</hours>
+		<mark>экзамен</mark>
+	</course>
+	
+	<course id = "f">
+		<period>9 – 13 января</period>
+		<name>Основы технологий разметки (HTML, XML)</name>
+		<teacher>ст. преп. Смольянинов А.В.</teacher>
+		<hours>20</hours>
+		<mark>зачет</mark>
+	</course>
+	
+	<course id = "g">
+		<period>16 – 31 января</period>
+		<name>Технология ADO.NET</name>
+		<teacher>ст. преп. Смольянинов А.В.</teacher>
+		<hours>40</hours>
+		<mark>зачет</mark>
+	</course>
+</lessons>

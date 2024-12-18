@@ -1,0 +1,84 @@
+IO
+
+потоки ввод и вывод
+
+4 основных класса:
+    InputStream - считывает байты
+    OutputStream - записывает байты
+    Reader - считывает символы
+    Writer - записывает символы
+
+Чтение и запись файлов через:
+    FileInputStream
+    FileOutputStream
+
+ Класс File
+ Для получения информации о файлах и папках (директориях или
+ католгах), можно использовать класс File
+ Паки и файли в Java описываются одним классом File!
+    File file = new File("C: // Users//file.txt");
+    File file = new File("C: // Users//directory");
+
+Важно! Создание объекта класса File, не означает наличие этого файли или папки!
+Узнать, что файл или папка реальны: метод exists();
+Как узнать, что файл ли это, или папка: есть 2 метода в классе File:
+    isFile();
+    isDirectory();
+
+абсолютный путь - от корня диска
+относительный путь - от корня проекта
+
+
+Чтение и запись файла
+FileInputStream (FileOutputStream) - поток считывает и записывает значения по байту
+ByteArrayInputStream (ByteArrayOutputStream) - поток считывает и записывает массивы байт
+BufferedInputStream (BufferedOutputStream) - буфферизируемый поток - добавляют
+специальный буффер в памяти, для выполгнения производительности при чтении и записи
+DataInputStream (DataOutputStream) - считывает и записывает данные приметивных типов
+
+Закрытие потоков
+FileInputStream fis = null;
+try{
+    fis = new FileInputStream(file);
+} catch (IOException ioException) {
+System.out.println(ioException.getMessage());
+} finally {
+    try{
+        if (fis != null){
+            fis.close();
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+
+Начиная с Java 7 проявилась конструкция
+try-with-resource
+
+Это позволяет не вызывать метод close() вручную
+
+Класс, который является ресурсом
+должен реализовывать интерфейс autoCloseable!
+
+    try (FileInputStream fis = new FileInputStream (file)){
+
+    } catch (IOException io) {
+    System.out.println(io.getMessage());
+    }
+
+FileReader & FileWriter
+
+Класс FileReader наследуется от абстрактного класса Reader и предоставляет функциональность для чтения файлов
+
+Класс FileWriter является производным от класса Writer. используется для записи текстовых фалов.
+Так, в конструктор передается либо путь к файлу в виде строки, либо объект File,
+который ссылается на конкретный текстовый файл.
+
+Параметр append в конструкторе указывает, должны ли данные записываться в конец файла (если
+true) или они должны перезаписывать данные в файле - default false!
+
+
+// apache poi - для работы с word, exel ect
+
+// nio - для исследования файловой системыы
+

@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Exam_task.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Журнал учета успевемости студентов</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    
+   
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+        </div>
+    <table class="auto-style1">
+        <tr>
+            <td colspan="2"style="height:100px">&nbsp;
+                <h2>Журнал учета успевемости студентов</h2>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:200px">&nbsp;
+                <div class="menu">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" Orientation="Vertical" ForeColor="Black">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Start.aspx" Text="Главная"/>
+                        <asp:MenuItem NavigateUrl="~/Form.aspx" Text="Внесение данных"/>
+                        <asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Отчет об успеваемости"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Подробности"/>
+                        <asp:MenuItem NavigateUrl="~/SummaryBD.aspx" Text="Список студентов"/>
+
+                    </Items>
+                </asp:Menu>
+
+                </div>
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="auto-style4">&nbsp; 
+                <div id="temo_footer"> 
+                    <ul class="footer_menu"> 
+                        <li>
+                            <a href="Start.aspx">
+                                Главная
+
+                            </a>
+
+                        </li> 
+                        <li>
+                            <a href="Form.aspx">
+                                Внесение данных
+
+                            </a>
+
+                              </li> 
+                        <li>
+                            <a href="Summary.aspx">
+                                Отчет об успеваемости
+
+                            </a>
+
+                                    </li> 
+                        <li>
+                            <a href="About.aspx">
+                                Подробности
+
+                            </a>
+
+                                          </li> 
+                        <li>
+                            <a href="SummaryBD.aspx">
+                                Список участников</a>
+
+                        </li>
+
+                    </ul>
+
+                </div> 
+
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>

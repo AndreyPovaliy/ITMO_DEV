@@ -1,0 +1,71 @@
+Исключение это непредвиденное поведение программы
+
+
+Object
+    -Throwable
+        *Error
+        *Exeption
+            -RuntimeExeption
+
+Checked exceptions
+    - или обработан
+    - или прокинут дальше, переложить на другой метод
+
+Unchecked exceptions
+    - исключение можно не обрабатовать, на уровне компилятора исключения не обрабатываются
+
+ Обработка исключений
+
+    try{
+        int array [] = new int []{1,2,3};
+        System.out.println(array[100]);
+
+        // ArrayIndexOutOfBoundsException
+     } catch (ArrayIndexOutOfBoundsException e){
+        System.out.println("Вышли за границы массива");
+     } catch (Exception e){
+        System.out.println("что-то не так");
+     } finally {
+        System.out.println("Это выполнится в любом случае");
+     }
+
+
+Иерархия исключений обрабатывается снизу вверх
+Если нужно реализовать одну логику, то исключения можно объединить
+
+Создание собственного исключения
+
+    public class Main {
+        public static void main(String[] args) {
+            RuntimeException exception = new RuntimeException ("Something's bad.");
+            trow exception;
+        }
+    }
+
+NullPointerExeption (NPE)
+
+    int [] numbers = null;
+    int size = numbers.length; //NPE
+
+    => создать проверку
+
+    int size = numbers == null? 0: numbers.length;
+
+NegativeArraySizeException
+    int nesSize = -1;
+    int [] numbers = new int [negSize];
+
+ArrayIndexOutOfBoundException
+    int [] array = {1,2,3};
+
+    int n1 = array [2]; // 3
+    int n2 = array [3]; // Exception
+
+    array[0]; // ok
+    array [-1]; // exception
+
+
+
+
+
+

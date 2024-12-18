@@ -1,0 +1,15 @@
+{
+    "answer": {
+        "everything": 2
+    },
+    "companies": [
+        "Info",
+        "TM"
+    ],
+    "name": "Test",
+    "nothing": null,
+    "user": {
+        "active": false,
+        "name": "polo"
+    }
+}

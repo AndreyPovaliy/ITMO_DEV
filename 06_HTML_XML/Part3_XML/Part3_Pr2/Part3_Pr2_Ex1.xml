@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+	<!DOCTYPE note [
+		  <!ELEMENT note (to, from, Sbj, msg)>
+		  <!ELEMENT to      (#PCDATA)>
+		  <!ELEMENT from    (#PCDATA)>
+		  <!ELEMENT Sbj (#PCDATA)>
+		  <!ELEMENT msg  (#PCDATA)>
+]>
+
+<note>
+	<to>Sunny</to>
+	<from>Oliver</from>
+	<Sbj>Hello</Sbj>
+	<msg>This is a good day!</msg>
+</note>

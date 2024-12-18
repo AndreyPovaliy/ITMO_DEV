@@ -1,0 +1,84 @@
+Коллекции
+
+(i) - interface
+(c) - class
+Iterable(i) <-- Collection(i)
+                    <--List(i)
+                        <--ArrayList(c)
+                        <--LinkedList (c)
+                        <--Vector (c)
+                            <--Stack (c)
+                    <--Queue(i)
+                        <--PriorityQueue(c)
+                        <--Deque(i)
+                            <--ArrayDeque(c)
+                    <--Set(i)
+                        <--SortedSet (i)
+                            <--TreeSet (c)
+                        <--HashSet (c)
+                        <--LinkedHashSet (c)
+
+
+_______________________________________________________
+    List
+    - int size();
+    - boolean isEmpty();
+    - boolean contains(Object o);
+    - boolean add(E e);
+    - boolean remove(Object o);
+    - boolean removeAll(Collection <?> collection);
+    - void clear();
+
+Immutable lists
+     List<Integer> ints = Arrays.asList(4522, 8899, 9012); //Java8
+     List<Integer> ints1 = List.of(4522, 8899, 9012); //Java11
+
+Mutable lists
+    List<Integer> integers = new ArrayList<>();
+
+_______________________________________________________
+    Set
+отличается от List тем что Set харнит уникальные значения
+
+Immutable sets
+     Set<String> emptySet = Set.of();
+
+
+Mutable sets
+    Set <String> set = new LinkedHashSet<>();
+
+HashSet - запись по хеш коду
+LinkedHashSet - запись в порядке внесения
+TreeSet - сортировка
+
+_______________________________________________________
+    Map
+
+(i) - interface
+(c) - class
+<<< extends
+<-- implements
+
+Map(i)
+    <<< SortedMap (i)
+        <<<NavigableMap (i)
+            <--TreeMap (c)
+    <-- Hashmap (c)
+        <<<LinkedHashMap (c)
+
+
+методы map
+    Collection methods
+        int size();
+        boolean isEmpty();
+        void clear();
+    Methods for keys & values
+        V put (K key, V value);
+        V get (Object key);
+        V remove (Object key);
+        boolean containsKey (Object key);
+        boolean containsValue (Object value)
+
+Immutable map
+    Map<String, String> emptyMap = Map.of();
+
